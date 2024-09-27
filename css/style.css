@@ -1,0 +1,96 @@
+html {
+	position: relative;
+}
+
+body {
+	margin-bottom: 120px;
+	margin-top: 30px;
+}
+
+.jumbotron {
+	height: 400px;
+	background-image: url(../img/header-baru.png);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0 -185px;
+	color: #eaeaea;
+	overflow: hidden;
+}
+
+.jumbotron img {
+	width: 150px;
+	height: 150px;
+	border: 5px solid #eaeaea;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+
+.jumbotron h1, .jumbotron p {
+	text-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+
+hr {
+	width: 250px;
+	border-bottom: 3px solid #999;
+}
+
+section {
+	min-height: 600px;
+}
+
+.pKiri, .pKanan {
+	opacity: 0;
+	transform: translate(-50px, 0);
+	transition: 1s;
+}
+
+.pKanan {
+	transform: translate(50px, 0);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.gallery .thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.gallery .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.gallery {
+	background-color: #eee;
+}
+
+.contact {
+	min-height: 800px;
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	height: 120px;
+	bottom: 0;
+	background-color: #333;
+	padding-top: 30px;
+}
+
+footer p {
+	color: white;
+	font-size: 1em;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+footer p i {
+	color: salmon;
+}
